@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="InfiniteNumber.css">
+    <link rel="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js">
+    <title>Staggering</title>
+
+    <style>
+        body {background-color: rgb(65, 46, 150);}
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <input type="number" id="number" value="0">
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"></script>
+    <script>
+     anime({
+            targets: '#number',
+            value: [0, 100],
+            duration: 2000,
+            round: 1,
+            easing: 'linear',
+            direction: 'alternate',
+            loop: true
+        });
+
+    </script>
+    
+</body>
+</html>
